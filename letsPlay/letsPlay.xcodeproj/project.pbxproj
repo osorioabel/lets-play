@@ -97,6 +97,8 @@
 			buildConfigurationList = 38DB178527551EC000D6360F /* Build configuration list for PBXNativeTarget "letsPlay" */;
 			buildPhases = (
 				38DB176E27551EC000D6360F /* Headers */,
+				38DB178B2755212300D6360F /* Run SwiftFormat */,
+				38DB178C2755219000D6360F /* Run SwiftLint */,
 				38DB176F27551EC000D6360F /* Sources */,
 				38DB177027551EC000D6360F /* Frameworks */,
 				38DB177127551EC000D6360F /* Resources */,
@@ -140,6 +142,7 @@
 				TargetAttributes = {
 					38DB177227551EC000D6360F = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					38DB177A27551EC000D6360F = {
 						CreatedOnToolsVersion = 13.1;
@@ -181,6 +184,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38DB178B2755212300D6360F /* Run SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftFormat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nmint run nicklockwood/SwiftFormat@0.48.18 .\n";
+		};
+		38DB178C2755219000D6360F /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nmint run realm/SwiftLint@0.45.0\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		38DB176F27551EC000D6360F /* Sources */ = {
@@ -333,6 +375,7 @@
 		38DB178627551EC000D6360F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -354,6 +397,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -361,6 +405,7 @@
 		38DB178727551EC000D6360F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

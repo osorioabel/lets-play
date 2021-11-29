@@ -1,0 +1,99 @@
+#
+# SwiftLint configuration file commonly used in STRV (v 0.1.2)
+#
+# Feel free to send pull request or suggest improvements!
+#
+#
+# Rule identifiers to exclude from running.
+#
+
+disabled_rules:
+  - todo
+  - identifier_name
+  - unused_closure_parameter
+  - cyclomatic_complexity
+  - multiple_closures_with_trailing_closure
+
+#
+# Some rules are only opt-in. Find all the available rules by running: swiftlint rules
+#
+opt_in_rules:
+  - force_unwrapping
+  - private_action
+  - private_outlet
+  - implicitly_unwrapped_optional
+  - empty_string
+  - extension_access_modifier
+  - closure_spacing
+  - fatal_error_message
+  - first_where
+  - contains_over_first_not_nil
+  - unused_import
+  - unavailable_function
+  - explicit_init
+  - redundant_objc_attribute
+  - strong_iboutlet
+
+#
+# Paths to include during linting. `--path` is ignored if present.
+#
+included:
+
+
+#
+# Paths to ignore during linting. Takes precedence over `included`.
+#
+excluded:
+  - ApolloCodegen
+  - Carthage
+  - Pods
+  - Tests
+  - scripts
+  - playgrounds
+  - vendor
+  - fastlane
+  - BarrysAtHome/Application/Resources/Generated/R.generated.swift
+  - BarrysAtHome/Application/Resources/Generated/L10n.generated.swift
+  - BarrysAtHome/Application/API.swift
+  - playgrounds
+  - R.generated.swift
+  - BarrysLib/Sources/Services/Networking/API.swift
+  - BarrysLib/ApolloCodegen
+  - API.swift
+  - BarrysLib/Package.swift
+  - BarrysLib
+  - "**/*/API.swift"
+  - build
+
+#
+# Configure individual rules below.
+#
+vertical_whitespace:
+  max_empty_lines: 2
+  
+type_name:
+  min_length: 1
+
+force_cast: error
+
+trailing_whitespace:
+  ignores_empty_lines: true
+
+line_length:
+  ignores_function_declarations: true
+  ignores_comments: true
+  ignores_urls: true
+  error: 400
+  warning: 350
+
+function_body_length:
+  error: 750
+  warning: 500
+
+type_body_length:
+  error: 2000
+  warning: 1500
+
+file_length:
+  error: 2000
+  warning: 1500
