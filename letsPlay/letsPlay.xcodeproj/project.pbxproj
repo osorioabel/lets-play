@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		38DB177C27551EC000D6360F /* letsPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DB177327551EC000D6360F /* letsPlay.framework */; };
-		38DB178127551EC000D6360F /* letsPlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB178027551EC000D6360F /* letsPlayTests.swift */; };
+		38DB17902755365700D6360F /* RemoteEventLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB178F2755365700D6360F /* RemoteEventLoaderTests.swift */; };
+		38DB1792275536BB00D6360F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB1791275536BB00D6360F /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +25,8 @@
 /* Begin PBXFileReference section */
 		38DB177327551EC000D6360F /* letsPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = letsPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38DB177B27551EC000D6360F /* letsPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = letsPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38DB178027551EC000D6360F /* letsPlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letsPlayTests.swift; sourceTree = "<group>"; };
+		38DB178F2755365700D6360F /* RemoteEventLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteEventLoaderTests.swift; sourceTree = "<group>"; };
+		38DB1791275536BB00D6360F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		38DB177527551EC000D6360F /* letsPlay */ = {
 			isa = PBXGroup;
 			children = (
+				38DB1791275536BB00D6360F /* Event.swift */,
 			);
 			path = letsPlay;
 			sourceTree = "<group>";
@@ -74,7 +77,7 @@
 		38DB177F27551EC000D6360F /* letsPlayTests */ = {
 			isa = PBXGroup;
 			children = (
-				38DB178027551EC000D6360F /* letsPlayTests.swift */,
+				38DB178F2755365700D6360F /* RemoteEventLoaderTests.swift */,
 			);
 			path = letsPlayTests;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38DB1792275536BB00D6360F /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38DB178127551EC000D6360F /* letsPlayTests.swift in Sources */,
+				38DB17902755365700D6360F /* RemoteEventLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +438,7 @@
 		38DB178927551EC000D6360F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -455,6 +460,7 @@
 		38DB178A27551EC000D6360F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
