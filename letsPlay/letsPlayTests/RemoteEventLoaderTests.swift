@@ -106,5 +106,9 @@ class RemoteEventLoaderTests: XCTestCase {
         func completeWith(error: Error, at index: Int = 0) {
             request[index].send(completion: .failure(error))
         }
+
+        func completeWith() {
+            
+        }
     }
 }
