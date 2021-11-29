@@ -202,7 +202,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nmint run nicklockwood/SwiftFormat@0.48.18 .\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ -z \"$CI\" ]; then\n\tmint run nicklockwood/SwiftFormat@0.48.18 .\nfi\n";
 		};
 		38DB178C2755219000D6360F /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -220,7 +220,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nmint run realm/SwiftLint@0.45.0\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ -z \"$CI\" ]; then\n\tmint run realm/SwiftLint@0.45.0\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
